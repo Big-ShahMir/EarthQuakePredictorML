@@ -57,7 +57,7 @@ The dataset is expected to be in a CSV file named data.csv, containing the follo
 Start by cloning the repository and navigating to the project directory:
 ```bash
 git clone <repository_url>
-cd earthquake-prediction
+cd src
 ```
 ### 2. Run the Script
 Execute the main script to preprocess the data, train the machine learning model, and visualize results:
@@ -68,5 +68,23 @@ python app.py
 - Model Parameters: The script will display the best hyperparameters identified through grid search.
 - Evaluation Metrics: The test loss and accuracy will be printed to the console after evaluation.
 - Geographical Visualization: A map will be generated to show earthquake locations. To display the map, ensure the following line is uncommented in the script:
+```python
+mlp.show()
+```
+### 4. Cleanup
+To clean up any temporary or generated files, simply remove any artifacts or generated outputs as needed.
+```bash
+rm -rf <generated_files>
+```
 
-  
+## Visualtization 
+The project generates a map of earthquake locations:
+- Blue Dots: Represent earthquake epicenters.
+- Coastlines, Countries, and Continents: Visualized to provide context to the locations.
+To view the map, uncomment the following line in the code:
+```python
+mlp.show()
+```
+
+## License
+This project is licensed under the MIT License. See `LICENSE` for more details. Feel free to use the code as a basis for further projects or as a learning tool.
