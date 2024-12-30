@@ -157,6 +157,7 @@ Y_tst = Y_tst.apply(pd.to_numeric, errors='coerce').fillna(0).values
 
 # print(X_tr.head(), Y_trn.head())
 
+# Model and parameters chosen as per best result highlighted in line 144
 model.compile(optimizer='Adamax', loss='squared_hinge', metrics=['accuracy'])
 model.fit(X_tr, Y_trn, batch_size=30, epochs=10, verbose=1, validation_data=(
     X_tst, Y_tst))
