@@ -1,4 +1,4 @@
-# Earthquake Prediction with Machine Learning
+# Earthquake Prediction with Machine Learning (Keras)
 
 ## Overview
 
